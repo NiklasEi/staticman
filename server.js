@@ -46,12 +46,13 @@ class StaticmanAPI {
 
   initialiseRoutes () {
     // Route: connect
+    /*
     this.server.get(
       '/v:version/connect/:username/:repository',
       this.bruteforce.prevent,
       this.requireApiVersion([1, 2]),
       this.controllers.connect
-    )
+    ) */
 
     // Route: process
     this.server.post(
