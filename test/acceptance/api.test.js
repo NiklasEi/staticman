@@ -26,7 +26,7 @@ afterAll(done => {
 })
 
 describe('Connect endpoint', () => {
-  test('accepts the invitation if one is found and replies with "OK!"', () => {
+  test.skip('accepts the invitation if one is found and replies with "OK!"', () => {
     const invitationId = 123
 
     const reqListInvititations = nock('https://api.github.com', {
@@ -60,7 +60,7 @@ describe('Connect endpoint', () => {
       })
   })
 
-  test('returns a 404 and an error message if a matching invitation is not found', () => {
+  test.skip('returns a 404 and an error message if a matching invitation is not found', () => {
     const invitationId = 123
     const reqListInvititations = nock('https://api.github.com', {
       reqheaders: {

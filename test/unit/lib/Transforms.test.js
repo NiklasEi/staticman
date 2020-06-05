@@ -18,4 +18,10 @@ describe('Transforms', () => {
       expect(Transforms.downcase('FOOBAR')).toEqual('foobar')
     })
   })
+
+  describe('base64', () => {
+    test('returns an downcased value', () => {
+      expect(Transforms.base64('FOObar')).toEqual('Rk9PYmFy')
+    })
+  })
 })
